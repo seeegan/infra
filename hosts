@@ -1,0 +1,2 @@
+lf-app1 ansible_host=192.168.0.105 ansible_user=root
+lf-app2 ansible_host=192.168.0.104  ansible_user=root
