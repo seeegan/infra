@@ -3,14 +3,14 @@
   hosts: localhost
   gather_facts: no
   tasks:
-    - name: ensure roles directory exist
-      file:
-        path: "roles"
-        state: directory
+   - name: ensure roles directory exist
+     file:
+          path: "roles"
+          state: directory
 
-- name: clone the git reposotory into the roles directory
-  git:
-    repo: 'git@github.com:seeegan/infra.git'
-    dest: "roles"
-    version: master
-    force: yes 
+   - name: clone the git reposotory into the roles directory
+     git:
+       repo: 'git@github.com:seeegan/infra.git'
+       dest: "roles"
+       version: master
+       force: yes 
