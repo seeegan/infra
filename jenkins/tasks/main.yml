@@ -1,0 +1,11 @@
+---
+# tasks file for jenkins
+- name: Copy sh script to remote machine to install Jenkins
+  ansible.builtin.copy:
+    src: /home/seegan/linuxfactory/infra/scripts/jenkins_install.sh
+    dest: /root/scripts
+
+- name: Copy sh script to remote machine to install Java
+  ansible.builtin.copy:
+    src: /home/seegan/linuxfactory/infra/scripts/install_java.sh
+    dest: /root/scripts
