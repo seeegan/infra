@@ -1,8 +1,4 @@
 ---
-- hosts: web
-  roles:
-   -  { role: 'seegan'  }
-
 - hosts: db
   roles:
-   -  { role: 'seegan'  }
+   -  { role: 'common'  }
